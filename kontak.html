@@ -8,9 +8,202 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" itemid="head">
-    <link rel="stylesheet" href="stylekontak.css">
     <link rel="icon" type="image/x-icon" href="a.png">
     <meta charset="UTF-8">
+    <style>
+        *, 
+/* ====== FONT-FAMILY ====== */
+
+.inter-fontfamily {
+    font-family: "Inter", system-ui;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+p{
+    color: black; font-family: Inter;
+}
+li{
+    color: black; font-family: Inter;
+}
+i{
+    color:rgb(0, 0, 0); font-family: Inter;
+    text-decoration: none;
+    border: #e5edfc00;
+    transition: all;
+    transition-duration: 300ms;
+}
+b{
+    color: black; font-family: Inter;
+}
+a{
+    color: black; font-family: Inter;
+}
+
+/* ====== NAVBAR ====== */
+.icon {
+    width: 40px;
+    border: #e5edfc00;
+    text-decoration: none;
+}
+
+.icon:hover {
+    border-bottom: 0px none;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #e5edfc;
+    padding-top: 70px;
+}
+
+nav{
+    background-color: #e5edfc;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.005rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    position: fixed;
+    background-position: center;
+    top: 0px;
+    width: 100%;
+    background-color: #e5edfcbe;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(33, 32, 34);
+    font-weight: 500;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid blue(0, 0, 0, 0);
+    padding: 5px;
+}
+
+nav ul li a:hover {
+    color: blue;
+    border-bottom: 1px solid blue;
+    padding: 5px;
+}
+
+.currentpage {
+    color: blue;
+    text-decoration: underline;
+    font-weight: 600;
+    text-underline-offset: 10px;
+}
+
+/* ====== BANNER ====== */
+
+fieldset {
+    border-color: #e5edfc00;
+}
+
+.buttomm {
+    font-size: smaller;
+    position: absolute;
+}
+
+/* ====== BODY ====== */
+
+.niput {
+    border-radius: 20px;
+    height: 30px;
+    width: 400px;
+    padding-left: 10px;
+}
+
+.border {
+    border-color: #e5edfc00;
+    background-color: #ffffff;
+    border-radius: 20px;
+    position: static;
+    box-shadow: 0px 0px 1.5px;
+    position: static;
+    float: right;
+    width: 60%;
+}
+
+.img {
+    border-radius: 20px;
+    position: static;
+    box-shadow: 0px 0px 1.5px;
+    position: static;
+    float: left;
+    width: 35%;
+    padding-left: 20px;
+}
+
+aside {
+    width: 840px;
+    padding: 15px;
+    margin-left: 15px;
+    right: 10px;
+    float: right;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.ngcokding {
+    text-decoration: none;
+}
+
+.backtotop {
+    padding-left: 1px;
+    padding-right: 1px;
+    position: fixed;
+    display: flex;
+    background-color: #a4bfff;
+    border-radius: 20%;
+    padding: 9px;
+    width: 12px;
+    bottom: 5%;
+    right: 30px;
+    border: #e5edfc00;
+    text-decoration: none;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+.backtotop:hover {
+    background-color: rgb(0, 0, 203);
+}
+
+.button {
+    background-color: blue;
+    color: #ffffff;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+.button:hover {
+    color: #a4bfff;
+    border-bottom: 1px solid #7e7e7e;
+    padding: 8px;
+    background-color: rgb(0, 0, 203);
+}
+
+i:hover {
+    color: blue;
+    border-bottom: none;
+}
+    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontak - AltLine</title>
     <div class="nav">
@@ -30,21 +223,21 @@
         <div class="border">
             <fieldset><fieldset>
                 <a id="Mulai"></a>
-                <h2><b>Hubungi Kami</b></h2>
-                <label for="untuk"><h4><b>Untuk</b></h4></label>
+                <h2>Hubungi Kami</h2>
+                <label for="untuk"><h4>Untuk</h4></label>
                 <select for="untuk">
                 <option value="Desain">Saran</option>
                 <option value="Pemrograman">Kritik</option>
                 <option value="Komputer">Pengembangan</option>
                 </select>
-                <label for="name"><h4><b>Nama</b></h4></label>
+                <label for="name"><h4>Nama</h4></label>
                 <input class="niput" id="name" name="" placeholder="Masukkan namamu disini"></input><br>
-                <label for="email" ><h4><b>Email</b></h4></label>
+                <label for="email" ><h4>Email</h4></label>
                 <input class="niput" id="email" type="email" name="" placeholder="Masukkan emailmu yang aktif"></input><br>
-                <label for="gender"><h4><b>Jenis kelamin</b></h4></label>
+                <label for="gender"><h4>Jenis kelamin</h4></label>
                 <input type="radio" id="gender" name="X">Laki-laki</input>
                 <input type="radio" id="gender" name="X">Perempuan</input><br>
-                <label for="pesan"><h4><b>Pesan</b></h4></label>
+                <label for="pesan"><h4>Pesan</h4></label>
                 <textarea class="niput" type="text" id="pesan" name="" placeholder="Tuliskan pesanmu di sini"></textarea><br>
                 <button class="button" onclick="alert(Pesan akan dikirim)">Kirim</button>
             </fieldset></fieldset>
