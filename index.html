@@ -8,9 +8,259 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" itemid="head">
-    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="a.png">
     <meta charset="UTF-8">
+    <style>*, 
+/* ====== FONT-FAMILY ====== */
+
+.inter-fontfamily {
+  font-family: "Inter", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+p{
+    color: black; font-family: Inter;
+}
+li{
+    color: black; font-family: Inter;
+}
+i{
+    color:rgb(0, 0, 0); font-family: Inter;
+    text-decoration: none;
+    border: #e5edfc00;
+    transition: all;
+    transition-duration: 300ms;
+}
+b{
+    font-family: Inter;
+}
+a{
+    font-family: Inter;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ====== NAVBAR ====== */
+.icon {
+    width: 40px;
+    border: #e5edfc00;
+    text-decoration: none;
+}
+
+.icon:hover {
+    border-bottom: 0px none;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #e5edfc;
+    padding-top: 70px;
+}
+
+nav{
+    background-color: #e5edfc;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.005rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    position: fixed;
+    background-position: center;
+    top: 0px;
+    width: 100%;
+    background-color: #e5edfcbe;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(33, 32, 34);
+    font-weight: 500;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid blue(0, 0, 0, 0);
+    padding: 5px;
+}
+
+nav ul li a:hover {
+    color: blue;
+    border-bottom: 1px solid blue;
+    padding: 5px;
+}
+
+.currentpage {
+    color: blue;
+    text-decoration: underline;
+    font-weight: 600;
+    text-underline-offset: 10px;
+}
+
+/* ====== BANNER ====== */
+
+fieldset {
+    border-color: #e5edfc00;
+}
+
+.buttomm {
+    font-size: smaller;
+    position: absolute;
+}
+
+/* ====== BODY ====== */
+
+.border {
+    border-color: #e5edfc00;
+    background-color: #ffffff;
+    border-radius: 20px;
+    position: static;
+    box-shadow: 0px 0px 1.5px;
+}
+
+.Mulai {
+    padding-left: 240px;
+    padding-right: 240px;
+}
+
+.darimana {
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-width: 100px;
+    border-radius: 20px;
+    background-color: #a4bfff;
+    position: static;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+.darimana table {
+    background-color: #e5edfc00;
+}
+
+.darimana:hover {
+    background-color: aquamarine;
+}
+
+.dariman table:hover {
+    background-color: #e5edfc00;
+}
+
+.diff {
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: center;
+    position: static;
+    align-items: center;
+    align-content: center;
+}
+
+.isi {
+    background-color: #dbdbdb;
+}
+
+.content {
+    transition: ease-in-out;
+    transition-duration: 300ms;
+    border-radius: 20px;
+}
+
+.content:hover {
+    width: 210px;
+}
+
+.brody {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.macet {
+    background-color: rgb(255, 255, 145);
+    border-radius: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+    align-items: center;
+    position: static;
+}
+
+.macet:hover {
+    background-color: rgb(255, 255, 130);
+}
+
+.rakyat {
+    background-color: #646464;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.banner {
+        background-image: url(https://micms.mediaindonesia.com/storage/app/media/FOTO/Operator/19-Jembatan.jpg);
+        background-size: 35%;
+        background-repeat: no-repeat;
+        padding-left: 3%;
+        padding-right: 45%;
+        position: static;
+        background-position-x: 85%;
+    }
+
+.backtotop {
+    padding-left: 1px;
+    padding-right: 1px;
+    position: fixed;
+    display: flex;
+    background-color: #a4bfff;
+    border-radius: 20%;
+    padding: 9px;
+    width: 12px;
+    bottom: 5%;
+    right: 30px;
+    border: #e5edfc00;
+    text-decoration: none;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+.backtotop:hover {
+    background-color: rgb(0, 0, 203);
+}
+
+.button {
+    background-color: blue;
+    color: #ffffff;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+.button:hover {
+    color: #a4bfff;
+    border-bottom: 1px solid #7e7e7e;
+    padding: 8px;
+    background-color: rgb(0, 0, 203);
+}
+
+i:hover {
+    color: blue;
+    border-bottom: none;
+}
+    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AltLine</title>
     <div class="nav">
@@ -27,7 +277,7 @@
         <fieldset><fieldset><fieldset>
             <table class="tablebanner">
                 <tr>
-                    <td><b><h1>Selamat datang di AltLine</h1></b></td>
+                    <td><h1>Selamat datang di AltLine</h1></td>
                 </tr>
                 <tr>
                     <td><a>Bersama-sama, jadikan transportasi umum sebagai moda yang <span style="background-color: yellowgreen;">lebih efisien dan ramah lingkungan</span></a><br><br><br></td>
@@ -45,12 +295,12 @@
                 <br><br><br><br><br>
                 <table class="Mulai">
                     <tr>
-                        <td><h1><b>Semua dimulai dari diri sendiri, demi keberlanjutan</b></h1></td>
+                        <td><h1>Semua dimulai dari diri sendiri, demi keberlanjutan</h1></td>
                         <td style="background-color: darkseagreen; border-radius: 20px; padding-left: 5px; padding-right: 5px;"><a>Setiap kita ingin menuju suatu tempat, akan ada pilihan antara mencoba menguasai jalanan, atau menggunakannya secara bersama-sama dalam satu moda</a></td>
                     </tr>
                 </table>
                 <br><br><br><br><br>
-                <h1 style="text-align: center;"><b>Mulai dari mana untuk beralih ke transportasi umum?</b></h1>
+                <h1 style="text-align: center;">Mulai dari mana untuk beralih ke transportasi umum?</h1>
                 <div class="darimana"><a href="rute.html"></a>
                     <table class="darimana">
                         <tr>
@@ -74,22 +324,22 @@
                         <tr> </tr>
                         <tr> </tr>
                         <tr>
-                            <td style="text-align: center; font-size: larger;"><b>Cari tahu moda sekitar</b></td>
+                            <td style="text-align: center; font-size: larger;">Cari tahu moda sekitar</td>
                             <td> </td>
                             <td> </td>
                             <td> </td>
                             <td> </td>
-                            <td style="text-align: center; font-size: larger;"><b>Kenali rutenya</b></td>
+                            <td style="text-align: center; font-size: larger;">Kenali rutenya</td>
                             <td> </td>
                             <td> </td>
                             <td> </td>
                             <td> </td>
-                            <td style="text-align: center; font-size: larger;"><b>Coba pergi ke suatu tempat</b></td>
+                            <td style="text-align: center; font-size: larger;">Coba pergi ke suatu tempat</td>
                             <td> </td>
                             <td> </td>
                             <td> </td>
                             <td> </td>
-                            <td style="text-align: center; font-size: larger;"><b>Transit untuk berpindah moda</b></td>
+                            <td style="text-align: center; font-size: larger;">Transit untuk berpindah moda</td>
                         </tr>
                         <tr></tr>
                             <td style="text-align: center; font-size: medium;"><a>Seperti pemberhentian bus, halte, terminal, atau stasiun</a></td>
@@ -111,16 +361,16 @@
                         </tr>
                     </table>
                 </div>
-                <br><br><br><br><br><h1 style="text-align: center;"><b>Keuntungan menggunakan transportasi umum</b></h1><h1 style="text-align: center;"><img src="https://awsimages.detik.net.id/community/media/visual/2023/04/03/jalan-sudirman-jakarta-macet-terus-wfh-jadi-solusi_169.jpeg?w=1200" alt="" style="width: 30%; border-radius: 20px;">   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/MRTset3.jpg/1200px-MRTset3.jpg" alt="" style="width: 30%; border-radius: 20px;"></h1>
+                <br><br><br><br><br><h1 style="text-align: center;">Keuntungan menggunakan transportasi umum</h1><h1 style="text-align: center;"><img src="https://awsimages.detik.net.id/community/media/visual/2023/04/03/jalan-sudirman-jakarta-macet-terus-wfh-jadi-solusi_169.jpeg?w=1200" alt="" style="width: 30%; border-radius: 20px;">   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/MRTset3.jpg/1200px-MRTset3.jpg" alt="" style="width: 30%; border-radius: 20px;"></h1>
                 <div class="diff">
                 <table style="text-align: center;" class="">
                     <tr>
                         <td style="background-color: indianred; padding: 15px;">
-                            <b>Kendaraan pribadi</b>
+                            Kendaraan pribadi
                         </td>
                         <td> <a>atau</a> </td>
                         <td style="background-color: #a4bfff; padding: 15px;">
-                            <b>Transportasi umum</b>
+                            Transportasi umum
                         </td>
                     </tr>
                     <tr>
@@ -146,7 +396,7 @@
                 </table></div>
                 <br><br><br><br>
                 <div class="brody">
-                <h1><b>Jenis-jenis Transportasi Umum Utama</b></h1>
+                <h1>Jenis-jenis Transportasi Umum Utama</h1>
                     <table>
                         <tr>
                             <td><a href="krl.html"><img class="content" src="https://commuterline.id/app/sam/assets/krl_trip/6588183a4af899491f095fb1b8b1a46c.png" width="200px" style="border-radius: 20px;"></a></td>
@@ -171,7 +421,7 @@
                 <div class="macet">
                     <table>
                         <tr>
-                            <td><h1><b>Kenapa Indonesia Macet Terus?</b></h1></td>
+                            <td><h1>Kenapa Indonesia Macet Terus?</h1></td>
                             <td>   </td>
                             <td>   </td>
                             <td rowspan="2"><iframe width="450" height="253" src="https://www.youtube.com/embed/7Ump65ZEEdQ?si=VikJ-pVG-y0p55gR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
@@ -185,7 +435,7 @@
                 </div>
                 <br><br><br>
                 <div class="rakyat">
-                    <h1 style="text-align: center; color: white;"><b>Transportasi umum memadai terjangkau, hak kita!</b></h1>
+                    <h1 style="text-align: center; color: white;">Transportasi umum memadai terjangkau, hak kita!</h1>
                     <br><a style="color: white; text-align: center;">Pajak digunakan untuk subsidi transportasi umum. Sudah seharusnya jika mereka ingin menariknya, fasilitas dan armada yang diberikan harus jauh lebih baik. Begitu juga akses pejalan kaki yang sekarang banyak dikuasai oleh pengendara arogan</a>
                     <br><br>
                     <table>
@@ -214,7 +464,7 @@
     <fieldset><fieldset><fieldset><fieldset>
         <table class="sosialmedia">
             <tr>
-                <td colspan="7" style="color: black;"><p><b>Sosial Media</b></p></td>
+                <td colspan="7" style="color: black;"><p>Sosial Media</p></td>
             </tr>
             <tr>
                 <td><a href="https://www.instagram.com/kemalsyabaniadama"><i class="fa-brands fa-instagram"></i></a></td>
