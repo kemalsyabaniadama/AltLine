@@ -8,9 +8,223 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" itemid="head">
-    <link rel="stylesheet" href="stylerute.css">
     <link rel="icon" type="image/x-icon" href="a.png">
-    <meta charset="UTF-8">
+    <meta charset="UTF-8">\
+    <style>
+        *, 
+/* ====== FONT-FAMILY ====== */
+
+.inter-fontfamily {
+    font-family: "Inter", system-ui;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+p{
+    color: black; font-family: Inter;
+}
+li{
+    color: black; font-family: Inter;
+}
+i{
+    color:rgb(0, 0, 0); font-family: Inter;
+    text-decoration: none;
+    border: #e5edfc00;
+    transition: all;
+    transition-duration: 300ms;
+}
+b{
+    color: black; font-family: Inter;
+}
+a{
+    color: black; font-family: Inter;
+}
+
+/* ====== NAVBAR ====== */
+.icon {
+    width: 40px;
+    border: #e5edfc00;
+    text-decoration: none;
+}
+
+.icon:hover {
+    border-bottom: 0px none;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #e5edfc;
+    padding-top: 70px;
+}
+
+nav{
+    background-color: #e5edfc;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.005rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    position: fixed;
+    background-position: center;
+    top: 0px;
+    width: 100%;
+    background-color: #e5edfcbe;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(33, 32, 34);
+    font-weight: 500;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid blue(0, 0, 0, 0);
+    padding: 5px;
+}
+
+nav ul li a:hover {
+    color: blue;
+    border-bottom: 1px solid blue;
+    padding: 5px;
+}
+
+.currentpage {
+    color: blue;
+    text-decoration: underline;
+    font-weight: 600;
+    text-underline-offset: 10px;
+}
+
+/* ====== BANNER ====== */
+
+fieldset {
+    border-color: #e5edfc00;
+}
+
+.buttomm {
+    font-size: smaller;
+    position: absolute;
+}
+
+.onnav {
+    text-decoration: none;
+    background-color: #a4bfff;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.onnav:hover {
+    color: blue;
+}
+
+.banner {
+    background-image: url(https://www.jakarta.go.id/uploads/contents/content--20230406022546.jpeg);
+    background-size: 35%;
+    background-repeat: no-repeat;
+    padding-left: 3%;
+    padding-right: 45%;
+    position: static;
+    background-position-x: 85%;
+}
+
+/* ====== BODY ====== */
+
+.border {
+    border-color: #e5edfc00;
+    background-color: #ffffff;
+    border-radius: 20px;
+    position: static;
+    box-shadow: 0px 0px 1.5px;
+}
+
+aside {
+    width: 840px;
+    padding: 15px;
+    margin-left: 15px;
+    right: 10px;
+    float: right;
+    background-color: #ffffff;
+    border-radius: 20px;
+  }
+
+.konteks {
+    position: static;
+    width: 200px;
+    float: left;
+    left: 10px;
+    padding: 15px;
+    padding-top: 6px;
+    background-color: #a4bfff;
+    border-radius: 20px;
+}
+
+.backtotop {
+    padding-left: 1px;
+    padding-right: 1px;
+    position: fixed;
+    display: flex;
+    background-color: #a4bfff;
+    border-radius: 20%;
+    padding: 9px;
+    width: 12px;
+    bottom: 5%;
+    right: 30px;
+    border: #e5edfc00;
+    text-decoration: none;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+.backtotop:hover {
+    background-color: rgb(0, 0, 203);
+}
+
+.button {
+    background-color: blue;
+    color: #ffffff;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+.button:hover {
+    color: #a4bfff;
+    border-bottom: 1px solid #7e7e7e;
+    padding: 8px;
+    background-color: rgb(0, 0, 203);
+}
+
+.onnav {
+    background-color: #e5edfc00;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+.onnav:hover {
+    color: blue;
+}
+
+i:hover {
+    color: blue;
+    border-bottom: none;
+}
+    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rute - AltLine</title>
     <div class="nav">
@@ -27,7 +241,7 @@
         <fieldset><fieldset><fieldset>
             <table class="tablebanner">
                 <tr>
-                    <td><b><h1>Peta Integrasi</h1></b></td>
+                    <td><h1>Peta Integrasi</h1></td>
                 </tr>
                 <tr>
                     <td><a><span style="background-color: yellowgreen;">Jangan takut nyasar</span> kalau naik transportasi umum. Semua peta moda terintegrasi tersedia di sini</span></a><br><br><br></td>
@@ -40,10 +254,10 @@
         <div class="border">
             <fieldset><fieldset>
                     <aside>
-                        <h1><b>Peta Rute</b></h1><a style="font-size: small;">Disediakan oleh Forum Diskusi Transportasi Jakarta</a><br><br><a href="https://smk.transjakarta.co.id/aset/berkas/rute/integrasi.jpg"><img class="peta" src="https://smk.transjakarta.co.id/aset/berkas/rute/integrasi.jpg" alt="" style="width: 720px;"></a>
+                        <h1>Peta Rute</h1><a style="font-size: small;">Disediakan oleh Forum Diskusi Transportasi Jakarta</a><br><br><a href="https://smk.transjakarta.co.id/aset/berkas/rute/integrasi.jpg"><img class="peta" src="https://smk.transjakarta.co.id/aset/berkas/rute/integrasi.jpg" alt="" style="width: 720px;"></a>
                         </aside>
                     <div class="konteks">
-                        <h3><b>Peta</b></h3>
+                        <h3>Peta</h3>
                         <a href="rute.html" class="button">Peta Integrasi</a>
                         <br><br>
                         <a href="krl.html" class="onnav">Commuter Line</a>
@@ -60,7 +274,7 @@
     <fieldset><fieldset><fieldset><fieldset>
         <table class="sosialmedia">
             <tr>
-                <td colspan="7" style="color: black;"><p><b>Sosial Media</b></p></td>
+                <td colspan="7" style="color: black;"><p>Sosial Media</p></td>
             </tr>
             <tr>
                 <td><a href="https://www.instagram.com/kemalsyabaniadama"><i class="fa-brands fa-instagram"></i></a></td>
